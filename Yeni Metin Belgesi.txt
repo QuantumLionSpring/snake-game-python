@@ -1,0 +1,49 @@
+pygame.init(): Pygame'i başlatır. Bu fonksiyon, Pygame modülünü kullanmaya başlamadan önce çağrılmalıdır. İşlem sırasında herhangi bir hata oluşursa, döndürülen bir demet içinde hata sayısı ve hata mesajları bulunur.
+
+pygame.display.set_caption(): Pencere başlığını ayarlar. Oyun penceresinin üst kısmında görüntülenecek metni belirler.
+
+pygame.display.set_mode(): Oyun penceresini oluşturur. Pencere boyutunu ve diğer özelliklerini belirlemek için kullanılır. Oyunun ana ekranını temsil eder.
+
+pygame.Color(): Bir renk nesnesi oluşturur. Bu fonksiyon, RGB (Red, Green, Blue) renk değerlerini alır ve ilgili renk nesnesini döndürür.
+
+pygame.time.Clock(): FPS (Frame Per Second) kontrolcüsü oluşturur. Oyun döngüsündeki her adımda bu kontrolcü, belirlenen FPS değerine uygun olarak oyunun hızını kontrol eder.
+
+pygame.event.get(): Pygame olaylarını alır. Klavye girişi, fare hareketi gibi kullanıcı etkileşimleri veya diğer sistem olayları gibi olaylar bu fonksiyon aracılığıyla elde edilir.
+
+pygame.draw.rect(): Dikdörtgen çizimi yapar. Oyun penceresinde dikdörtgen şeklinde bir nesne çizmek için kullanılır.
+
+pygame.font.SysFont(): Sistem fontlarını kullanarak bir Font nesnesi oluşturur. Metinleri belirli bir font ve boyutta ekrana yazdırmak için kullanılır.
+
+pygame.quit(): Pygame'i kapatır. Oyunun sonlandırılması veya çıkılması gerektiğinde çağrılır.
+
+
+pygame.display.set_mode(): Oyun penceresini oluştururken belirtilen boyutlarda bir ekran yaratır. Bu fonksiyon aynı zamanda, oluşturulan pencerenin yüzey nesnesini döndürür. Bu yüzey, oyunun grafiklerini ve diğer öğelerini görüntülemek için kullanılır.
+
+pygame.Surface.fill(): Bir yüzeyi (genellikle ekran yüzeyi) belirli bir renkle doldurur. Bu yöntem, bir dikdörtgen gibi yüzeyin tamamını doldurur.
+
+pygame.font.Font.render(): Bir metni belirli bir font, renk ve diğer özelliklerle bir yüzeye (genellikle bir metin yüzeyine) render eder. Bu yöntem, metni belirtilen özelliklere göre hazırlar ve bir yüzey nesnesi olarak döndürür.
+
+pygame.Surface.blit(): Bir yüzeyi (genellikle bir metin yüzeyi veya bir resim yüzeyi) diğer bir yüzeyin (genellikle oyun penceresinin) belirli bir konumuna kopyalar. Bu yöntem, bir yüzeyi başka bir yüzeyin üzerine çizer.
+
+
+get_rect() metodu, bir yüzeyin sınırlarını temsil eden bir dikdörtgen nesnesini döndürür. Bu metot, özellikle oyunlarda nesnelerin konumlarını belirlemede ve çarpışma algılama gibi işlemlerde kullanılır.
+
+
+.midtop() metodu, bir dikdörtgenin üst kenarının ve orta noktasının belirli bir konuma ayarlanmasını sağlar. Bu yöntem, dikdörtgenin orta üst noktasını, belirtilen konumun orta üst noktasına hizalar.
+
+pygame.display.update() sadece belirli bir alanı veya belirli alanları günceller. Bu şekilde, sadece değişen kısımların güncellenmesi sağlanır ve performans artırılır.
+
+pygame.display.flip() ise ekranın tamamını günceller. Yani tüm ekranı temizler ve ardından tüm nesneleri yeniden çizer. Bu genellikle oyun döngüsünün sonunda kullanılır ve ekranın her karesinde tam bir güncelleme yapmak istediğinizde kullanılır.
+
+pygame.KEYDOWN, klavye tuşlarına basma eylemini temsil eden bir sabittir.
+
+event.key: Bu, kullanıcının hangi tuşa bastığını belirten bir özelliktir. Bu, bir ASCII karakter kodu olarak ifade edilir.
+
+ord('w'), 'w' karakterinin ASCII değerini döndürür. Bu, kullanıcının 'w' tuşuna basarak yukarı gitmesini sağlar.
+
+
+pygame.K_ESCAPE, pygame kütüphanesinde tanımlı olan bir sabittir ve klavyeden ESC tuşunun hangi anahtar kodunu temsil ettiğini belirtir. ESC tuşu genellikle bir oyunun veya bir programın çalışmasını durdurmak veya bir menüyü kapatmak için kullanılır. 
+
+pygame.display.update(): Ekranı günceller, yani tüm çizimleri ekranda gösterir.
+
+tick(FPS): Belirli bir FPS değerinde oyun döngüsünü düzenler. Bu metod, döngünün her bir iterasyonunda çağrılmalıdır ve parametre olarak istenen FPS değerini alır.
